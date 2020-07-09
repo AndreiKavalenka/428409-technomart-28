@@ -1,6 +1,6 @@
-var feedbackPopup = document.querySelector(".feedback");
-var feedbackButton = document.querySelector(".feedback-button");
-var feedbackClose = document.querySelector(".feedback-close");
+let feedbackPopup = document.querySelector(".feedback");
+let feedbackButton = document.querySelector(".feedback-button");
+let feedbackClose = document.querySelector(".feedback-close");
 
 if (feedbackButton != null && feedbackClose != null) {
   feedbackButton.addEventListener("click", function (event) {
@@ -22,11 +22,11 @@ if (feedbackButton != null && feedbackClose != null) {
   });
 }
 
-var buyItemButtons = document.querySelectorAll(".button-buy"),
+let buyItemButtons = document.querySelectorAll(".button-buy"),
   i;
-var cartBlock = document.querySelector(".cart-notification");
-var cartClose = document.querySelector(".cart-notification-close");
-var cartCancel = document.querySelector(".cart-cancel-btn");
+let cartBlock = document.querySelector(".cart-notification");
+let cartClose = document.querySelector(".cart-notification-close");
+let cartCancel = document.querySelector(".cart-cancel-btn");
 
 for (i = 0; i < buyItemButtons.length; ++i) {
   buyItemButtons[i].addEventListener("click", function (event) {
@@ -53,9 +53,9 @@ window.addEventListener("keydown", function (event) {
   }
 });
 
-var serviceLinks = document.querySelectorAll(".service-list a");
-var serviceBlocks = document.querySelectorAll(".details-block");
-var j, h, k;
+let serviceLinks = document.querySelectorAll(".service-list a");
+let serviceBlocks = document.querySelectorAll(".details-block");
+let j, h, k;
 
 for (i = 0; i < serviceLinks.length; ++i) {
   serviceLinks[i].addEventListener("click", function (event) {
