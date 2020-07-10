@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -30,8 +30,8 @@
     </div>
     <div class="container">
       <div class="header-center clearfix">
-        <p class="header-center-block header-about-company">Интернет-магазин строительных материалов и инструментов для
-          ремонта</p>
+        <p class="header-center-block header-about-company">Интернет-магазин <br>строительных материалов <br>и
+            инструментов для ремонта</p>
         <div class="header-center-block header-contacts">
           <p class="header-phone">+7 (812) 555-05-55</p>
           <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -70,7 +70,7 @@
     <h1 class="catalog-title">Перфораторы</h1>
     <div class="catalog-container clearfix">
       <aside class="navigation-service-column filter-column">
-        <form action="/filter" method="post">
+        <form action="https://echo.htmlacademy.ru/" method="post">
           <p>Фильтр:</p>
           <h3 class="filter-title">Цена:</h3>
           <div class="range-filter">
@@ -90,30 +90,34 @@
             </div>
           </div>
 
-          <h3 class="filter-title">Производители:</h3>
+          <fieldset class="fieldset-form">
+            <legend class="filter-title">Производители:</legend>
 
-          <input id="bosch-checkbox" name="bosch" type="checkbox" value="bosch" checked="checked">
-          <label for="bosch-checkbox">Bosch</label>
+            <input id="bosch-checkbox" name="bosch" type="checkbox" value="bosch" checked="checked">
+            <label for="bosch-checkbox">Bosch</label>
 
-          <input id="intersckol-checkbox" name="intersckol" type="checkbox" value="intersckol">
-          <label for="intersckol-checkbox">Интерскол</label>
+            <input id="intersckol-checkbox" name="intersckol" type="checkbox" value="intersckol">
+            <label for="intersckol-checkbox">Интерскол</label>
 
-          <input id="makita-checkbox" name="makita" type="checkbox" value="makita" checked="checked">
-          <label for="makita-checkbox">Makita</label>
+            <input id="makita-checkbox" name="makita" type="checkbox" value="makita" checked="checked">
+            <label for="makita-checkbox">Makita</label>
 
-          <input id="dewalt-checkbox" name="dewalt" type="checkbox" value="dewalt">
-          <label for="dewalt-checkbox">Dewalt</label>
+            <input id="dewalt-checkbox" name="dewalt" type="checkbox" value="dewalt">
+            <label for="dewalt-checkbox">Dewalt</label>
 
-          <input id="hitachi-checkbox" name="hitachi" type="checkbox" value="hitachi">
-          <label for="hitachi-checkbox">Hitachi</label>
+            <input id="hitachi-checkbox" name="hitachi" type="checkbox" value="hitachi">
+            <label for="hitachi-checkbox">Hitachi</label>
+          </fieldset>
 
-          <h3 class="filter-title">Питание:</h3>
+          <fieldset class="fieldset-form">
+            <legend class="filter-title">Питание:</legend>
 
-          <input type="radio" name="charge" id="rechargeable" value="rechargeable" checked="checked">
-          <label for="rechargeable">Аккумуляторные</label>
+            <input type="radio" name="charge" id="rechargeable" value="rechargeable" checked="checked">
+            <label for="rechargeable">Аккумуляторные</label>
 
-          <input type="radio" name="charge" id="unchargeable" value="unchargeable">
-          <label for="unchargeable">Сетевые</label>
+            <input type="radio" name="charge" id="unchargeable" value="unchargeable">
+            <label for="unchargeable">Сетевые</label>
+          </fieldset>
 
           <button type="submit" class="filter-button">Показать</button>
         </form>
@@ -132,18 +136,19 @@
         </div>
 
         <div class="catalog-block">
+
           <div class="catalog-item">
             <figure class="item-image">
-              <img src="img/Perforator_2.jpg" width="218" height="169" alt="Перфоратор Bosch BFG 3000">
+              <img src="img/Perforator_3.jpg" width="218" height="169" alt="Перфоратор Bosch BFG 6000">
             </figure>
             <div class="actions">
               <a href="#" class="catalog-button button-buy">Купить</a>
               <a href="#" class="catalog-button button-bookmark">В закладки</a>
             </div>
             <p class="item-name">Перфоратор Bosch</p>
-            <p class="item-model">BFG 3000</p>
-            <p class="item-price">22 500 Р.</p>
-            <p class="item-discount">15 500 Р.</p>
+            <p class="item-model">BFG 6000</p>
+            <p class="item-price">30 500 Р.</p>
+            <p class="item-discount">25 500 Р.</p>
           </div>
 
           <div class="catalog-item">
@@ -162,16 +167,18 @@
 
           <div class="catalog-item new-item">
             <figure class="item-image">
-              <img src="img/Perforator_4.jpg" width="218" height="169" alt="Перфоратор Bosch BFG 2000">
+              <img src="img/Perforator_3.jpg" width="218" height="169" alt="Перфоратор Bosch BFG 6000">
             </figure>
             <div class="actions">
               <a href="#" class="catalog-button button-buy">Купить</a>
               <a href="#" class="catalog-button button-bookmark">В закладки</a>
             </div>
             <p class="item-name">Перфоратор Bosch</p>
-            <p class="item-model">BFG 2000</p>
-            <p class="item-discount">12 500 Р.</p>
+            <p class="item-model">BFG 6000</p>
+            <p class="item-price">30 500 Р.</p>
+            <p class="item-discount">25 500 Р.</p>
           </div>
+
           <div class="catalog-item new-item">
             <figure class="item-image">
               <img src="img/Perforator_2.jpg" width="218" height="169" alt="Перфоратор Bosch BFG 3000">
@@ -331,7 +338,7 @@
         </div>
         <div class="footer-create">
           <p>Разработано -</p>
-          <a href="http://htmlacademy.ru/">htmlacademy.ru</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </div>
       </div>
     </div>
