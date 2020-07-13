@@ -1025,7 +1025,7 @@ body {
     position: absolute;
     top: 5px;
     left: 0;
-    content: url('../img/icon-up.png');
+    content: url('../img/Shape.svg');
     opacity: 0.3;
     color: var(--button-color);
   }
@@ -1351,7 +1351,7 @@ body {
     position: absolute;
     top: 12px;
     left: 13px;
-    display: inline-block;
+    
     content: url('../img/cart-icon.svg');
     opacity: 0.3;
     color: #92c178;
@@ -1391,23 +1391,22 @@ body {
   }
   
   .catalog-paginator {
+    display: flex;
     font-size: 0;
     margin-bottom: 60px;
   }
   
   .catalog-paginator a,
   .catalog-paginator span {
-    display: inline-block;
-  }
-  
-  .catalog-paginator a,
-  .catalog-paginator span {
-    padding-top: 9.5px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 38px;
+    height: 38px;
+    margin-bottom: 39px;
     margin-right: 10px;
-    border-radius: 5px;
     border: 1px solid #e5e5e5;
   }
   
