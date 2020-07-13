@@ -689,7 +689,8 @@ body {
     color: #6a7180;
     content: url('../img/icon-bookmark.svg');
     filter: grayscale(100%);
-    opacity: 1;
+    opacity: 0.3;
+    mix-blend-mode: normal;
   }
   
   .header-bookmark:hover::before {
@@ -706,7 +707,7 @@ body {
     left: 18px;
     display: inline-block;
     vertical-align: top;
-    content: url('../img/cart-icon.svg');
+    content: url('../img/icon-cart.png');
     opacity: 0.3;
     cursor: pointer;
     color: #6a7180;
