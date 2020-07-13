@@ -1023,7 +1023,7 @@ body {
     position: absolute;
     top: 5px;
     left: 0;
-    content: url('../img/shape.svg');
+    content: url('../img/shape-1.svg');
     opacity: 0.3;
     color: var(--button-color);
   }
