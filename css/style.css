@@ -934,8 +934,8 @@ body {
   }
   
   .catalog-title {
-    padding-top: 27.5px;
-    padding-bottom: 29.5px;
+    height: 60px;
+    padding-top: 29px;
     padding-left: 30px;
     margin-bottom: 20px;
     background-color: #f2f6f8;
@@ -1551,7 +1551,6 @@ body {
   
   .social-button::before {
     position: absolute;
-    display: inline-block;
     color: var(--white-color);
     content: url('../img/vk-icon.png');
     top: 13px;
