@@ -210,9 +210,8 @@ body {
     font-family: "Cuprum", sans-serif, Arial;
     font-size: 24px;
     line-height: 30px;
-    font-weight: 700;
+    font-weight: bold;
     color: var(--white-color);
-    text-transform: uppercase;
   }
   
   .slider-button,
@@ -1152,7 +1151,7 @@ body {
     display: none;
   }
   
-  .filter-column label {
+  .fieldset-form label {
     position: relative;
     margin-left: 35px;
     margin-bottom: 20px;
@@ -1163,7 +1162,6 @@ body {
     position: absolute;
     top: 0;
     left: -35px;
-    display: inline-block;
     vertical-align: bottom;
     content: url('../img/radio-off.svg');
     fill: #C6C7C6;
@@ -1246,7 +1244,7 @@ body {
     vertical-align: top;
     width: 100px;
     height: 25px;
-    font-family: "Cuprum", Arial, sans-serif, ;
+    font-family: "Cuprum", Arial, sans-serif;
     font-weight: 400;
     text-align: center;
     font-size: 17px;
@@ -1839,7 +1837,6 @@ body {
     padding-right: 200px;
     margin-left: 0px;
     border-style: none;
-    border-radius: 5px;
     outline: none;
     background-color: var(--button-color);
   }
@@ -1979,18 +1976,21 @@ body {
   }
   
   .site-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
     font-size: 0;
     margin-bottom: 20px;
   }
   
-  .site-menu .menu-item {
+  /*.site-menu .menu-item {
     display: inline-block;
-  }
+  }*/
   
   .menu-item {
     position: relative;
-    width: 277px;
-    min-height: 101px;
+    width: 300px;
+    min-height: 100px;
     padding-top: 23px;
     padding-left: 23px;
     overflow: hidden;
@@ -2005,7 +2005,7 @@ body {
   }
   
   .menu-item-name {
-    margin-bottom: 15px;
+    margin-bottom: 14px;
   }
   
   .menu-item-info {
@@ -2067,10 +2067,6 @@ body {
     content: "";
   }
   
-  .discount {
-    background-color: #85d179;
-  }
-  
   .discount:after {
     position: absolute;
     top: 31px;
@@ -2083,6 +2079,9 @@ body {
   
   .delivery {
     background-color: #f6b22d;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 280px;
   }
   
   .delivery:after {
@@ -2096,7 +2095,7 @@ body {
   }
   
   .slider-container {
-    margin-bottom: 53px;
+    margin-bottom: 59px;
   }
   
   .slider-inside-contain {
@@ -2113,7 +2112,6 @@ body {
   }
   
   .slider-item {
-    display: block;
     float: left;
     width: 620px;
     min-height: 266px;
@@ -2127,15 +2125,14 @@ body {
   .slider-drill+label:after,
   .slider-perforator+label:after {
     position: absolute;
-    top: 220px;
-    left: 300px;
-    display: inline-block;
+    bottom: 36px; /* мб сделать top?*/
+    left: 295px;
     vertical-align: top;
-    width: 4px;
-    height: 4px;
+    width: 8px; /*6*/
+    height: 8px; /*6*/
     background-color: var(--white-color);
     border-radius: 50%;
-    border: 3px solid var(--white-color);
+    border: 1px solid var(--white-color);
     z-index: 1000;
     content: "";
   }
@@ -2147,10 +2144,10 @@ body {
   
   .slider-drill:checked+label:after,
   .slider-perforator:checked+label:after {
-    width: 4px;
-    height: 4px;
+    width: 8px; /*6*/
+    height: 8px; /*6*/ 
     border-radius: 50%;
-    border: 3px solid var(--white-color);
+    border: 1px solid var(--white-color);
     background-color: var(--button-color);
   }
   
@@ -2163,7 +2160,7 @@ body {
   }
   
   .slider-item .slider-button {
-    margin-left: 24px;
+    margin: -5px 0px 27px 24px;
   }
   
   .slider-header {
@@ -2175,7 +2172,7 @@ body {
   }
   
   .slider-title {
-    margin-bottom: 1px;
+    margin-bottom: 5px;
   }
   
   .drill {
@@ -2205,18 +2202,21 @@ body {
   }
   
   .site-menu-block-2 {
-    float: right;
+    display: flex;
+    flex-direction: column;
   }
   
   .site-menu-block-2 .discount {
     margin-bottom: 20px;
+    margin-left: 20px;
+    width: 280px;
+    background-color: #85d179;
   }
   
   .left-arrow:before {
     position: absolute;
     top: 115px;
     left: 24px;  
-    display: inline-block;
     content: url('../img/icon-left.png');
     color: var(--white-color);
     z-index: 1000;
@@ -2226,7 +2226,6 @@ body {
     position: absolute;
     top: 115px;
     right: 24px;
-    display: inline-block;
     content: url('../img/icon-right.png');
     color: var(--white-color);
     z-index: 1000;
@@ -2657,5 +2656,18 @@ body {
   }
 
   .visually-hidden {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+  }
+
+  .scale {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
   }

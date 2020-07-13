@@ -31,9 +31,9 @@
     <div class="container">
       <div class="header-center clearfix">
         <p class="header-center-block header-about-company">Интернет-магазин <br>строительных материалов <br>и
-            инструментов для ремонта</p>
+          инструментов для ремонта</p>
         <div class="header-center-block header-contacts">
-          <p class="header-phone">+7 (812) 555-05-55</p>
+          <tel class="header-phone">+7 (812) 555-05-55</tel>
           <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="header-center-block user-field-head">
@@ -69,7 +69,7 @@
     </ul>
     <h1 class="catalog-title">Перфораторы</h1>
     <div class="catalog-container clearfix">
-      <aside class="navigation-service-column filter-column">
+      <aside class="filter-column">
         <form action="https://echo.htmlacademy.ru/" method="post">
           <p>Фильтр:</p>
           <h3 class="filter-title">Цена:</h3>
@@ -84,9 +84,11 @@
             </div>
 
             <div class="price-controls clearfix">
-              <input class="min-price" type="text" value="0">
-              <span class="minus">—</span>
-              <input class="max-price" type="text" value="30000">
+              <label for="scale" class="scale">
+                <input id="scale" class="min-price" type="text" value="0">
+                <span class="minus">—</span>
+                <input id="scale" class="max-price" type="text" value="30000">
+              </label>
             </div>
           </div>
 
@@ -304,7 +306,7 @@
     <div class="footer-center-block container clearfix">
       <div class="footer-address">
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p>+7 (812) 555-05-55</p>
+        <tel>+7 (812) 555-05-55</tel>
       </div>
       <ul class="footer-nav-block2">
         <li>
