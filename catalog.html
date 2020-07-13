@@ -33,7 +33,7 @@
         <p class="header-center-block header-about-company">Интернет-магазин <br>строительных материалов <br>и
           инструментов для ремонта</p>
         <div class="header-center-block header-contacts">
-          <tel class="header-phone">+7 (812) 555-05-55</tel>
+          <a href="tel:+78125550555" class="header-phone">+7 (812) 555-05-55</a>
           <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="header-center-block user-field-head">
@@ -84,10 +84,12 @@
             </div>
 
             <div class="price-controls clearfix">
-              <label for="scale" class="scale">
-                <input id="scale" class="min-price" type="text" value="0">
-                <span class="minus">—</span>
-                <input id="scale" class="max-price" type="text" value="30000">
+              <label for="scale-min" class="scale">
+                <input id="scale-min" class="min-price" type="text" value="0">
+              </label>
+              <span class="minus">—</span>
+              <label for="scale-max" class="scale">
+                <input id="scale-max" class="max-price" type="text" value="30000">
               </label>
             </div>
           </div>
@@ -306,7 +308,7 @@
     <div class="footer-center-block container clearfix">
       <div class="footer-address">
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <tel>+7 (812) 555-05-55</tel>
+        <a class="footer-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
       </div>
       <ul class="footer-nav-block2">
         <li>
