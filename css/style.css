@@ -778,10 +778,10 @@ body {
   
   .header-phone {
     position: relative;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    padding-left: 70px;
-    padding-right: 42px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    padding-left: 76.5px;
+    padding-right: 37px;
     margin-bottom: 5px;
     border: 3px solid var(--white-color);
   }
@@ -789,9 +789,7 @@ body {
   .header-phone::before {
     position: absolute;
     top: 10px;
-    left: 13px;
-    display: inline-block;
-    vertical-align: top;
+    left: 40px;
     content: url('../img/icon-phone.svg');
     color: #b7bfc8;
   }
@@ -1912,18 +1910,22 @@ body {
     background-color: #ba2732;
   }
   
-  .user-login,
+  /*.user-login,
   .user-register {
     display: inline-block;
-  }
+  }*/
   
   .user-login {
-    position: relative;
-    padding-top: 14px;
-    padding-bottom: 15px;
-    padding-left: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
     padding-right: 27px;
+    width: 94px;
+    height: 45px;
+    position: relative;
     background-color: var(--white-color);
+    margin-right: 10px;
   }
   
   .user-field-head {
@@ -1936,10 +1938,8 @@ body {
   
   .user-login:before {
     position: absolute;
-    top: 16px;
-    left: 15px;
-    display: inline-block;
-    vertical-align: top;
+    top: 14px;
+    left: 14px;
     content: url('../img/icon-login.svg');
     opacity: 0.3;
   }
@@ -1955,18 +1955,18 @@ body {
   }
   
   .user-register {
-    padding-top: 14px;
-    padding-bottom: 15px;
-    padding-left: 25px;
-    padding-right: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 150px; 
+    height: 45px; 
     background-color: var(--white-color);
   }
   
-  .user-login {
-    margin-right: 10px;
-  }
-  
   .user-connect-head {
+    display: flex;
+    flex-wrap: nowrap;
     width: 285px;
   }
   
@@ -2686,11 +2686,14 @@ body {
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
-    line-height: 30px;
     color: #EE3643;
     text-decoration: none;
   }
 
   .price-controls {
     display: flex;
+  }
+
+  .header-contacts a {
+
   }
